@@ -10,7 +10,7 @@ body {
   font-family:Khula;
   font-size:3em;
   text-align:center;
-  height:200px;
+  height:500px;
   width:600px;
   display:block;
   color:white;
@@ -25,4 +25,17 @@ body {
   position:relative;
   top:-0.14em;
   left:10px;
+}
+#months
+{
+  margin-top: 3%;
+  margin-left: 10%;
+}
+select
+{
+  width: 90%;
+  font-size: 40px;
+  font-weight: bolder;
+  background-image: linear-gradient(to right ,  #2affff,white);
+  /* background-color: #2affff; */
 }

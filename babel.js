@@ -62,15 +62,14 @@ class TextScramble {
   
   const phrases = [
     'Hello,',
-     'Wanna be a part of a cool',
+     'Wanna be a part of a',
      'Mathematical experiment?',
      'Its called \'wisdom of crowds\'',
      'Together we can determine when',
      'Will this 2nd wave of',
      'COVID 19',
      'Might end',
-     'Just click the button',
-     'Whenever you are ready',
+     'Are you ready?',
      '&#x2620 &#x2620  &#x2620  &#x2620 '
   ]
   
@@ -80,13 +79,14 @@ class TextScramble {
   let counter = 0
   const next = () => {
     fx.setText(phrases[counter]).then(() => {
-      setTimeout(next, 1000)
+      setTimeout(next, 2000)
     })
     counter = (counter + 1) % phrases.length
   }
   
   next();
-  function hi()
-  {
-      window.open('2nd.html','_self');
-  }
+   function hi()
+   {
+       window.open('2nd.html','_self');
+   }
+setTimeout(hi, 31500);

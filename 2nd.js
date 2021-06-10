@@ -2,9 +2,9 @@
 consoleText(['Idea, termed \'the wisdom of crowds\', is that in a large group errors of judgment should cancel each other out',
  ' Today we use same principle to guess the month when covid-19 2nd wave in India',
   'Might end',
-    'All you have to do is press on month you think covid-19 might end.We will use all data collected  to guess the month',
+    'All you have to do is press on month you think covid-19 might end.We will use all data collected  to make a guess',
     'Note: This is just a simple experiment this in no way provides any definite answer to when covid19 second wave in India might end']
-    , 'text',['tomato','rebeccapurple','lightblue','blue','red']);
+    , 'text',['orange','white','blue','rgb(0, 255, 0)','red']);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];
