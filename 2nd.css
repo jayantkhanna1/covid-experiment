@@ -33,9 +33,71 @@ body {
 }
 select
 {
+  border-radius: 10px;
   width: 90%;
   font-size: 40px;
   font-weight: bolder;
   background-image: linear-gradient(to right ,  #2affff,white);
-  /* background-color: #2affff; */
+}
+#disabled
+{
+  display: none;
+  margin-top: 20px;
+  border-radius: 5px;
+  width: 90%;
+}
+#submit-button
+{
+  background-color: #2affff;
+  margin-top: 20px;
+  border-radius: 10px;
+  width: 90%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+@media only screen and (max-width: 480px) {
+  body{
+    margin-top: 25%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  .console-container {
+    font-family:Khula;
+    font-size:1.5em;
+    text-align:center;
+    height:300px;
+    width:auto;
+    display:block;
+    color:white;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
+  }
+  select
+  {
+    width: 90%;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 20px;
+    font-weight: bolder;
+    background-image: linear-gradient(to right ,  #2affff,white);
+  }
+  #submit-button
+  {
+    background-color: #2affff;
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 90%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+  }
 }

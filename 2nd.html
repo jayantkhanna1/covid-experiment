@@ -1,33 +1,43 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- meta tags -->
+        <meta charset="utf-8">
+        <meta name = "viewport" content = "width = device-width, user-scalable = 0, initial-scale = 1.0, maximum-scale = 1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- title of the page -->
         <title>Experiment</title>
-        <!-- linking local css -->
+        <!-- link to bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <!-- link to personal style sheet -->
         <link rel="stylesheet" href="2nd.css">
     </head>
     <body>
         <div class='console-container'>
             <span id='text'></span>
-            <div class='console-underscore' id='console'>&#95;
+            <div class='console-underscore' id='console'>&#95;</div>
         </div>
-    </div>
-    <div id="months">
-        <form action="#">
-            <select name="months-list" id="moyhs-list-1">
-                <option value="">Select month</option>
-                <option value="july 2021">July 2021</option>
-                <option value="August 2021">August 2021</option>
-                <option value="September 2021">September 2021</option>
-                <option value="October 2021">October 2021</option>
-                <option value="November 2021">November 2021</option>
-                <option value="December 2021">December 2021</option>
-                <option value="January 2022">January 2022</option>
-                <option value="February 2022">February 2022</option>
-                <option value="Other">Other</option>
-            </select>
-        </form>
-    </div>
-    <script src="2nd.js"></script>
+        <div id="months">
+            <form action="#"  id="form-submit" method="post" name="google-sheet">
+                <select name="months-list" id="months-list">
+                    <option value="">Select month</option>
+                    <option value="August 2021">August 2021</option>
+                    <option value="September 2021">September 2021</option>
+                    <option value="October 2021">October 2021</option>
+                    <option value="November 2021">November 2021</option>
+                    <option value="December 2021">December 2021</option>
+                    <option value="January 2022">January 2022</option>
+                    <option value="February 2022">February 2022</option>
+                    <option value="Other">Other</option>
+                </select>
+                <br>
+                <input type="submit" value="Submit" id="submit-button" onclick="disable()">
+                <!-- bootstrap spinner class button so that once pressed user wont be able to press unless first information has been lodged in google sheets -->
+                <button class="btn btn-primary input" id="disabled" disabled>
+                    <span class="spinner-grow"></span>Please wait
+                </button><br>
+            </form>
+        </div>
+        <script src="2nd.js"></script>
     </body>
 </html>

@@ -66,9 +66,9 @@ class TextScramble {
      'Mathematical experiment?',
      'Its called \'wisdom of crowds\'',
      'Together we can determine when',
-     'Will this 2nd wave of',
-     'COVID 19',
-     'Might end',
+     'Will 3rd wave of COVID-19',
+     'Might start',
+     'in INDIA',
      'Are you ready?',
      '&#x2620 &#x2620  &#x2620  &#x2620 '
   ]
@@ -85,8 +85,8 @@ class TextScramble {
   }
   
   next();
-   function hi()
+   function next_page()
    {
        window.open('2nd.html','_self');
    }
-setTimeout(hi, 31500);
+setTimeout(next_page, 31500);
